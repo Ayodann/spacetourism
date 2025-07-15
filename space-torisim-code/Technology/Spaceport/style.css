@@ -1,0 +1,394 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(background-technology-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: white;
+  font-family: "Bellefair", serif;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.maintext p {
+  font-family: "Bellefair", serif;
+}
+
+li {
+  font-family: "Barlow", sans-serif;
+}
+
+.headertext {
+  font-family: "Bellefair", serif;
+}
+
+/* header */
+header {
+  padding: 1.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.5rem;
+}
+
+/* Menu icon (hamburger) */
+.dropdownimg {
+  width: 24px;
+  height: 21px;
+  cursor: pointer;
+}
+.dropdownimg img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Dropdown: hidden by default */
+.dropdown {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 250px;
+  background: hsla(0, 0%, 100%, 0.233);
+  backdrop-filter: blur(10px);
+  display: none;
+  z-index: 100;
+  padding-left: 32px;
+}
+
+/* Show dropdown when checkbox is checked */
+#menu-toggle:checked + .dropdownimg + .dropdown {
+  display: block;
+}
+
+/* Close button styling */
+.cancel {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 2.5rem;
+  padding-right: 2rem;
+}
+.cancel img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Menu list */
+.dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+.dropdown a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding-inline: 20px;
+  padding-block: 15px;
+}
+
+.navtext {
+  margin-top: 20px;
+  width: 14.7rem;
+}
+.navtext a {
+  margin-bottom: 10px;
+}
+
+.navtext a li:hover {
+  border-right: 2px solid rgba(255, 255, 255, 0.726);
+}
+
+.navtext #active li {
+  border-right: 2px solid white;
+  cursor: unset;
+}
+.navtext #active li:hover {
+  color: unset;
+}
+
+/* body */
+
+main {
+  text-align: center;
+}
+
+main #head {
+  font-family: "Barlow", sans-serif;
+  letter-spacing: 1.5px;
+  gap: 10px;
+  padding-bottom: 1.5rem;
+}
+
+main #head span {
+  color: rgba(255, 255, 255, 0.637);
+  margin-right: 1rem;
+}
+
+main img {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+  padding-top: 1rem;
+}
+
+main a {
+  color: white;
+  padding: 1rem;
+  padding-inline: 1.3rem;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.342);
+  margin-inline: 5px;
+  text-align: center;
+}
+
+main a:hover {
+  border-color: white;
+}
+
+main #active {
+  background-color: white;
+  color: black;
+}
+
+.link {
+  margin-top: 3rem;
+}
+
+.text {
+  margin-top: 2.5rem;
+  padding: 1rem;
+}
+
+.name p {
+  padding-bottom: 10px;
+  color: rgba(255, 255, 255, 0.61);
+}
+
+.name h2 {
+  padding-bottom: 1rem;
+}
+
+.about {
+  line-height: 1.5rem;
+  font-family: "Barlow", sans-serif;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url(background-technology-tablet.jpg);
+    padding: 0;
+  }
+
+  header {
+    padding-inline: 0;
+    padding-top: 0;
+  }
+
+  .container {
+    max-width: 784px;
+    margin-inline: auto;
+    padding-left: 1.5rem;
+  }
+
+  .dropdownimg {
+    display: none;
+  }
+
+  .dropdown {
+    display: block;
+    max-width: 1000px;
+    position: relative;
+    padding: 0;
+    width: unset;
+  }
+
+  .cancel {
+    display: none;
+  }
+
+  nav {
+    padding-bottom: 0;
+  }
+
+  .navtext {
+    display: flex;
+    justify-content: flex-end;
+    position: none;
+    padding-right: 20px;
+    width: 600px;
+    margin-top: 0;
+    gap: 5px;
+  }
+
+  .navtext a {
+    padding-block: 40px;
+    margin-bottom: 0;
+  }
+
+  .navtext a:hover {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.568);
+  }
+
+  .navtext a:active {
+    border-bottom: 2px solid white;
+  }
+  .navtext a li:hover {
+    border-right: none;
+  }
+
+  .navtext #active li {
+    border-right: none;
+  }
+
+  .navtext #active {
+    border-bottom: 2px solid white;
+    cursor: unset;
+  }
+
+  .navtext #active:hover {
+    color: unset;
+  }
+
+  /* body */
+
+  main {
+    text-align: unset;
+  }
+
+  #head {
+    padding-inline: 1.5rem;
+    max-width: 784px;
+    margin-inline: auto;
+  }
+
+  .intro {
+    text-align: center;
+  }
+
+  .name p {
+    font-size: larger;
+  }
+
+  .name h2 {
+    font-size: xx-large;
+  }
+
+  .about {
+    max-width: 480px;
+    margin-inline: auto;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-image: url(background-technology-desktop.jpg);
+    padding-top: 1.5rem;
+  }
+
+  .container {
+    max-width: 1300px;
+    margin-inline: auto;
+  }
+
+  .navtext a {
+    padding-block: 30px;
+  }
+
+  .dropdown {
+    width: 100%;
+    z-index: 98;
+  }
+
+  .navtext {
+    width: 650px;
+    gap: 10px;
+  }
+
+  hr {
+    background-color: rgba(255, 255, 255, 0.534);
+    width: 100%;
+    max-width: 1000px;
+    border: none;
+    height: 0.5px;
+    margin-right: -20px;
+    margin-left: 2.2rem;
+    z-index: 99;
+  }
+
+  /* body */
+
+  main {
+    max-width: 1300px;
+    margin-inline: auto;
+  }
+
+  #head {
+    max-width: 1300px;
+    margin-left: 6.5rem;
+    padding: 0;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: unset;
+    align-items: center;
+    gap: 30px;
+    padding-block: 1rem;
+    justify-content: space-between;
+    max-width: 1210px;
+    margin-left: 6.5rem;
+  }
+
+  .image {
+    content: url("image-spaceport-portrait.jpg");
+    height: auto;
+    max-width: 50%;
+  }
+  .link {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    gap: 30px;
+  }
+
+  .numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .numbers a {
+    margin: 0;
+  }
+
+  .text {
+    margin-top: 0;
+  }
+
+  .about {
+    line-height: 2rem;
+  }
+
+  .name h2 {
+    font-size: xxx-large;
+  }
+  .name p {
+    font-size: x-large;
+  }
+}

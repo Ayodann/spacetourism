@@ -1,0 +1,345 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(background-home-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 1.5rem;
+  color: white;
+  font-family: "Bellefair", serif;
+}
+
+/* header */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.5rem;
+}
+
+/* Menu icon (hamburger) */
+.dropdownimg {
+  width: 24px;
+  height: 21px;
+  cursor: pointer;
+}
+.dropdownimg img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Dropdown: hidden by default */
+.dropdown {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 250px;
+  background: hsla(0, 0%, 100%, 0.233);
+  backdrop-filter: blur(10px);
+  display: none;
+  z-index: 100;
+  padding-left: 32px;
+}
+
+/* Show dropdown when checkbox is checked */
+#menu-toggle:checked + .dropdownimg + .dropdown {
+  display: block;
+}
+
+/* Close button styling */
+.cancel {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 2.5rem;
+  padding-right: 2rem;
+}
+.cancel img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Menu list */
+.dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+.dropdown a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding-inline: 20px;
+  padding-block: 15px;
+}
+
+.navtext {
+  margin-top: 20px;
+  width: 14.7rem;
+}
+.navtext a {
+  margin-bottom: 10px;
+}
+
+.navtext a li:hover {
+  border-right: 2px solid rgba(255, 255, 255, 0.726);
+}
+
+.navtext #active li {
+  border-right: 2px solid white;
+  cursor: unset;
+}
+.navtext #active li:hover {
+  color: unset;
+}
+
+/* body */
+
+section {
+  text-align: center;
+  gap: 24px;
+  align-items: center;
+  max-width: 488px;
+  margin-inline: auto;
+  height: auto;
+}
+p {
+  padding-top: 1.5rem;
+  line-height: 2;
+}
+h1 {
+  font-size: 5rem;
+  padding-block: 5px;
+  letter-spacing: 0;
+}
+.blub {
+  position: relative;
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5.2rem;
+  height: 10rem;
+  width: 10rem;
+  margin-inline: auto;
+  transition: all 0.5s ease-in-out;
+  padding: 0;
+  cursor: pointer;
+}
+
+.blub::after {
+  content: "";
+  position: absolute;
+  top: -45px;
+  left: -45px;
+  width: 250px;
+  height: 250px;
+  background-color: rgba(255, 255, 255, 0.185);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.blub:hover {
+  transform: scale(1.05);
+}
+
+.blub:hover::after {
+  opacity: 1;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.maintext p {
+  font-family: "Barlow", sans-serif;
+}
+li {
+  font-family: "Barlow", sans-serif;
+}
+.headertext {
+  font-family: "Bellefair", serif;
+  /* font-family: "Barlow", sans-serif; */
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url(background-home-tablet.jpg);
+    padding: 0;
+  }
+
+  .container {
+    max-width: 784px;
+    margin-inline: auto;
+    padding-left: 1.5rem;
+  }
+
+  .dropdownimg {
+    display: none;
+  }
+
+  .dropdown {
+    display: block;
+    max-width: 1000px;
+    position: relative;
+    padding: 0;
+    width: unset;
+  }
+
+  .cancel {
+    display: none;
+  }
+
+  nav {
+    padding-bottom: 0;
+  }
+
+  .navtext {
+    display: flex;
+    justify-content: flex-end;
+    position: none;
+    padding-right: 20px;
+    width: 600px;
+    margin-top: 0;
+    gap: 5px;
+  }
+
+  .navtext a {
+    padding-block: 40px;
+    margin-bottom: 0;
+  }
+
+  .navtext a:hover {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.568);
+  }
+
+  .navtext a:active {
+    border-bottom: 2px solid white;
+  }
+  .navtext a li:hover {
+    border-right: none;
+  }
+
+  .navtext #active li {
+    border-right: none;
+  }
+
+  .navtext #active {
+    border-bottom: 2px solid white;
+    cursor: unset;
+  }
+
+  .navtext #active:hover {
+    color: unset;
+  }
+
+  section {
+    max-width: 512px;
+    margin-inline: auto;
+    padding-top: 6rem;
+  }
+  h1 {
+    font-size: 7rem;
+    padding-block: 1.5rem;
+    letter-spacing: 2px;
+  }
+  p {
+    padding: 0;
+    font-size: medium;
+  }
+  .headertext p {
+    word-spacing: 1px;
+    letter-spacing: 1.5px;
+    font-size: large;
+  }
+  .blub {
+    position: relative;
+    height: 180px;
+    width: 180px;
+    font-size: 16px;
+  }
+
+  .blub::after {
+    top: -35px;
+    left: -35px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-image: url(background-home-desktop.jpg);
+    padding-top: 1.5rem;
+  }
+
+  .container {
+    max-width: 1300px;
+    margin-inline: auto;
+  }
+
+  .navtext a {
+    padding-block: 30px;
+  }
+
+  .dropdown {
+    width: 100%;
+    z-index: 98;
+  }
+
+  .navtext {
+    width: 650px;
+    gap: 10px;
+  }
+
+  hr {
+    background-color: rgba(255, 255, 255, 0.534);
+    width: 100%;
+    max-width: 1000px;
+    border: none;
+    height: 0.5px;
+    margin-right: -20px;
+    margin-left: 2.2rem;
+    z-index: 100;
+  }
+
+  section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin-inline: 5rem;
+    text-align: left;
+    padding-top: 10rem;
+  }
+
+  h1 {
+    margin-left: -5px;
+  }
+
+  .maintext {
+    max-width: 460px;
+  }
+
+  .blub {
+    margin: 0;
+  }
+
+  .explore {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+}

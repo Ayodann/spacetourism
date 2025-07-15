@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Space tourism website</title>
+  </head>
+  <body id="home">
+    <header class="container">
+      <!-- header -->
+      <nav>
+        <a href="/"><img src="logo.svg" alt="logo" /></a>
+        <hr />
+
+        <!-- Toggle input -->
+        <input type="checkbox" id="menu-toggle" hidden />
+
+        <!-- Hamburger icon opens menu -->
+        <label for="menu-toggle" class="dropdownimg">
+          <img src="icon-hamburger.svg" alt="menu button" />
+        </label>
+
+        <!-- Full-screen dropdown nav -->
+        <div class="dropdown">
+          <ul>
+            <!-- Close icon -->
+            <label for="menu-toggle" class="cancel">
+              <img src="icon-close.svg" alt="close button" />
+            </label>
+
+            <div class="navtext">
+              <a href="#home" id="active"><li>00 HOME</li></a>
+              <a href="http://127.0.0.1:5500/Destination/moon/index.html"
+                ><li>01 DESTINATION</li></a
+              >
+              <a href="http://127.0.0.1:5500/Crew/COMMANDER/index.html"
+                ><li>02 CREW</li></a
+              >
+              <a href="http://127.0.0.1:5500/Technology/Lunch%20vehicle/"
+                ><li>03 TECHNOLOGY</li></a
+              >
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <section>
+        <div class="maintext">
+          <div class="headertext">
+            <p>SO, YOU WANT TO TRAVEL TO</p>
+            <h1>SPACE</h1>
+          </div>
+          <p>
+            Let’s face it; if you want to go to space, you might as well
+            genuinely go to outer space and not hover kind of on the edge of it.
+            Well sit back, and relax because we’ll give you a truly out of this
+            world experience!
+          </p>
+        </div>
+        <div class="explore">
+          <p class="blub">EXPLORE</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

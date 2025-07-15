@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>MARS</title>
+  </head>
+  <body>
+    <header class="container">
+      <!-- header -->
+      <nav>
+        <a href="/"><img src="logo.svg" alt="logo" /></a>
+        <hr />
+
+        <!-- Toggle input -->
+        <input type="checkbox" id="menu-toggle" hidden />
+
+        <!-- Hamburger icon opens menu -->
+        <label for="menu-toggle" class="dropdownimg">
+          <img src="icon-hamburger.svg" alt="menu button" />
+        </label>
+
+        <!-- Full-screen dropdown nav -->
+        <div class="dropdown">
+          <ul>
+            <!-- Close icon -->
+            <label for="menu-toggle" class="cancel">
+              <img src="icon-close.svg" alt="close button" />
+            </label>
+
+            <div class="navtext">
+              <a href="http://127.0.0.1:5500/index.html"><li>00 HOME</li></a>
+              <a href="#destination" id="active"><li>01 DESTINATION</li></a>
+              <a href="http://127.0.0.1:5500/Crew/COMMANDER/index.html"
+                ><li>02 CREW</li></a
+              >
+              <a href="http://127.0.0.1:5500/Technology/Lunch%20vehicle/"
+                ><li>03 TECHNOLOGY</li></a
+              >
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <p id="head"><span>01</span>PICK YOUR DESTINATION</p>
+      <section>
+        <div class="mars"><img src="image-mars.webp" alt="" /></div>
+        <div class="text">
+          <ul>
+            <a href="http://127.0.0.1:5500/Destination/moon/index.html"
+              ><li>MOON</li></a
+            >
+            <a href="" id="active"><li>MARS</li></a>
+            <a href="http://127.0.0.1:5500/Destination/europa/index.html"
+              ><li>EUROPA</li></a
+            >
+            <a href="http://127.0.0.1:5500/Destination/titan/index.html"
+              ><li>TITAN</li></a
+            >
+          </ul>
+
+          <div class="about">
+            <h1>MARS</h1>
+            <p>
+              Don’t forget to pack your hiking boots. You’ll need them to tackle
+              Olympus Mons, the tallest planetary mountain in our solar system.
+              It’s two and a half times the size of Everest!
+            </p>
+          </div>
+          <hr />
+
+          <div class="stat">
+            <div class="stats">
+              <p>AVG. DISTANCE</p>
+              <h2>225 MIL. KM</h2>
+            </div>
+            <div class="stats">
+              <p>EST. TRAVEL TIME</p>
+              <h2>9 MONTHS</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

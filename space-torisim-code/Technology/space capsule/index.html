@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>SPACE CAPSULE</title>
+  </head>
+  <body>
+    <header class="container">
+      <!-- header -->
+      <nav>
+        <a href="/"><img src="logo.svg" alt="logo" /></a>
+        <hr />
+
+        <!-- Toggle input -->
+        <input type="checkbox" id="menu-toggle" hidden />
+
+        <!-- Hamburger icon opens menu -->
+        <label for="menu-toggle" class="dropdownimg">
+          <img src="icon-hamburger.svg" alt="menu button" />
+        </label>
+
+        <!-- Full-screen dropdown nav -->
+        <div class="dropdown">
+          <ul>
+            <!-- Close icon -->
+            <label for="menu-toggle" class="cancel">
+              <img src="icon-close.svg" alt="close button" />
+            </label>
+
+            <div class="navtext">
+              <a href="http://127.0.0.1:5500/index.html"><li>00 HOME</li></a>
+              <a href="http://127.0.0.1:5500/Destination/moon/index.html"
+                ><li>01 DESTINATION</li></a
+              >
+              <a href="http://127.0.0.1:5500/Crew/COMMANDER/index.html"
+                ><li>02 CREW</li></a
+              >
+              <a href="#technology" id="active"><li>03 TECHNOLOGY</li></a>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <p id="head"><span>03</span>SPACE LUNCH 101</p>
+
+      <div class="intro">
+        <div class="image">
+          <img src="image-space-capsule-landscape.jpg" alt="" />
+        </div>
+
+        <div class="link">
+          <div class="numbers">
+            <a href="http://127.0.0.1:5500/Technology/Lunch%20vehicle/">1</a>
+            <a href="http://127.0.0.1:5500/Technology/Spaceport/index.html"
+              >2</a
+            >
+            <a href="" id="active">3</a>
+          </div>
+
+          <div class="text">
+            <div class="name">
+              <p>THE TERMINOLOGY...</p>
+              <h2>SPACE CAPSULE</h2>
+            </div>
+            <div class="about">
+              <p>
+                A space capsule is an often-crewed spacecraft that uses a
+                blunt-body reentry capsule to reenter the Earth's atmosphere
+                without wings. Our capsule is where you'll spend your time
+                during the flight. It includes a space gym, cinema, and plenty
+                of other activities to keep you entertained.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
